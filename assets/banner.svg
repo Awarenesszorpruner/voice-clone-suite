@@ -1,0 +1,94 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0620"/>
+      <stop offset="55%" stop-color="#181035"/>
+      <stop offset="100%" stop-color="#221244"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9b5cff" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#5c2dc9" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#5c2dc9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5eead4"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="textGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#d9c9ff"/>
+    </linearGradient>
+    <radialGradient id="ringFade" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#67e8f9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="360" fill="url(#glow)"/>
+
+  <!-- faint grid backdrop -->
+  <g stroke="#4b2f8f" stroke-opacity="0.18" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="140" x2="1200" y2="140"/>
+    <line x1="0" y1="220" x2="1200" y2="220"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+  </g>
+
+  <!-- sound emanation rings on right side -->
+  <g>
+    <circle cx="960" cy="180" r="150" fill="none" stroke="#a855f7" stroke-opacity="0.25" stroke-width="1.5"/>
+    <circle cx="960" cy="180" r="112" fill="none" stroke="#67e8f9" stroke-opacity="0.3" stroke-width="1.5"/>
+    <circle cx="960" cy="180" r="74" fill="none" stroke="#c084fc" stroke-opacity="0.4" stroke-width="1.5"/>
+    <circle cx="960" cy="180" r="40" fill="url(#ringFade)"/>
+  </g>
+
+  <!-- microphone glyph -->
+  <g transform="translate(960,180)">
+    <rect x="-16" y="-48" width="32" height="58" rx="16" fill="#f5f3ff"/>
+    <path d="M -30 -4 A 30 30 0 0 0 30 -4" fill="none" stroke="#f5f3ff" stroke-width="6" stroke-linecap="round"/>
+    <line x1="0" y1="26" x2="0" y2="44" stroke="#f5f3ff" stroke-width="6" stroke-linecap="round"/>
+    <line x1="-18" y1="44" x2="18" y2="44" stroke="#f5f3ff" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- waveform bars flowing from mic to left -->
+  <g fill="url(#barGrad)">
+    <rect x="740" y="164" width="8" height="32" rx="3"/>
+    <rect x="756" y="150" width="8" height="60" rx="3"/>
+    <rect x="772" y="172" width="8" height="16" rx="3"/>
+    <rect x="788" y="140" width="8" height="80" rx="3"/>
+    <rect x="804" y="158" width="8" height="44" rx="3"/>
+    <rect x="820" y="120" width="8" height="120" rx="3"/>
+    <rect x="836" y="150" width="8" height="60" rx="3"/>
+    <rect x="852" y="165" width="8" height="30" rx="3"/>
+    <rect x="868" y="132" width="8" height="96" rx="3"/>
+    <rect x="884" y="158" width="8" height="44" rx="3"/>
+    <rect x="900" y="148" width="8" height="64" rx="3"/>
+    <rect x="916" y="168" width="8" height="24" rx="3"/>
+  </g>
+
+  <!-- small floating particles for depth -->
+  <g fill="#67e8f9" opacity="0.5">
+    <circle cx="1080" cy="90" r="3"/>
+    <circle cx="1120" cy="250" r="2.5"/>
+    <circle cx="1050" cy="290" r="2"/>
+    <circle cx="700" cy="80" r="2"/>
+    <circle cx="640" cy="300" r="2.5"/>
+  </g>
+
+  <!-- headline -->
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="72" font-weight="700" fill="url(#textGlow)" textLength="700" lengthAdjust="spacingAndGlyphs">
+    AI Voice Clone Tool
+  </text>
+
+  <!-- accent underline -->
+  <rect x="62" y="172" width="220" height="5" rx="2.5" fill="#67e8f9" opacity="0.85"/>
+
+  <!-- tagline -->
+  <text x="60" y="220" font-family="'Segoe UI', Arial, sans-serif" font-size="24" fill="#cbd5f5" opacity="0.9" textLength="660" lengthAdjust="spacingAndGlyphs">
+    Clone voices and generate realistic speech from text
+  </text>
+  <text x="60" y="254" font-family="'Segoe UI', Arial, sans-serif" font-size="24" fill="#cbd5f5" opacity="0.9" textLength="330" lengthAdjust="spacingAndGlyphs">
+    using deep learning models
+  </text>
+</svg>
